@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.grid-item{
+    /* width: 33%; */
+    height: 50px;
+    border: 2px solid red;
+}
+.grid-item:nth-child(1){
+    grid-row: 1/3;
+}
+.item img{
+    width: 33%;
+}
