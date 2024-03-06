@@ -1,0 +1,157 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /* transform: translateX(-50%); */
+}
+.zero{
+ background-color: rgb(29,29,29);
+}
+.one li a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    
+    
+}
+.one li a:hover{
+    color: rgb(130, 230, 0);
+}
+.free-content{
+  background-color: whitesmoke;
+  margin: 30px 30px;
+  text-align: center;
+  display: flex;
+}
+.free{
+  margin-left: 88px;
+  text-align: center;
+  
+}
+.free-content p{
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 400;
+  line-height: 85px;
+  padding-left: 18px;
+  text-align: center;
+
+}
+.fred{
+  margin-left: 80px;
+  text-align: center;
+
+}
+.images{
+  display: flex;
+  flex-direction: row;
+  gap: 0 20px;
+  width: 47%;
+  margin-left:30px;
+}
+.images img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.images span{
+  position: absolute;
+  position: absolute;
+   top: 138%;
+  left: 5%;
+  /* transform: translate(70px); */
+  color: #fff;
+}
+.images p{
+  color: #fff;
+  position: absolute;
+  top: 138%;
+  left: 53%;
+}
+.product-display h5{
+  text-align: center;
+  margin-top: 30px;
+}
+.product-container{
+  display: flex;
+}
+.ones{
+  display: flex;
+}
+.cadimg img{
+  width: 10px;
+}
+.last-section{
+   background-color: rgba(0, 0, 0, 0.719);
+  ;
+}
+.last-section h3{
+  text-align: center;
+  color: #fff;
+}
+.chat-images{
+  align-items: center;
+  /* display: inline-block; */
+  /* text-align: center; */
+  /* text-overflow: ellipsis; */
+  /* white-space: nowrap; */
+  transform: translate(35%,0);
+
+}
+.chat-images img{
+  margin-left: 50px;
+  color: #fff;
+}
+.details{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+.details ul li{
+  list-style: none;
+  margin: 10px;
+  color: #fff;
+}
+.details ul li a{
+  list-style: none;
+  margin: 10px;
+  color: #fff;
+}
+.details ul a{
+  list-style: none;
+  margin: 10px;
+  color: #fff;
+}
+.details ul li a:hover{
+  text-decoration: none;
+}
+.details ul a:hover{
+  text-decoration: none;
+}
+#GridImages{
+  background-color: whitesmoke;
+}
+.GridImages{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto auto auto;
+  
+  
+}
+.GridImages-item img{
+  /* width: 100px; */
+  height:auto;
+}
+.GridImages-item {
+  background-color: #fff;
+  /* width: 80px; */
+}
+.two{
+  background-color: #fff;
+}
