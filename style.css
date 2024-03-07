@@ -84,8 +84,13 @@
 .ones{
   display: flex;
 }
+.cadtitle{
+ /* text-align: center; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .cadimg img{
-  width: 10px;
+  width: 18px;
 }
 .last-section{
    background-color: rgba(0, 0, 0, 0.719);
@@ -98,9 +103,7 @@
 .chat-images{
   align-items: center;
   /* display: inline-block; */
-  /* text-align: center; */
-  /* text-overflow: ellipsis; */
-  /* white-space: nowrap; */
+ 
   transform: translate(35%,0);
 
 }
