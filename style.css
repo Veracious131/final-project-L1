@@ -28,6 +28,7 @@
   margin: 30px 30px;
   text-align: center;
   display: flex;
+  justify-content: space-around;
 }
 .free{
   margin-left: 88px;
@@ -45,35 +46,58 @@
 }
 .fred{
   margin-left: 80px;
+  margin-right: 50px;
   text-align: center;
 
 }
 .images{
   display: flex;
   flex-direction: row;
-  gap: 0 20px;
+  gap: 0px 20px;
   width: 47%;
   margin-left:30px;
+  margin-bottom: 20px;
 }
 .images img{
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.images span{
+.image-name1{
   position: absolute;
   position: absolute;
    top: 138%;
   left: 5%;
-  /* transform: translate(70px); */
   color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+}
+.image-name2{
+  position: absolute;
+  top: 198%;
+  left: 5%;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
+}
+.image-name3{
+  position: absolute;
+  top: 198%;
+  left: 53%;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 300;
 }
 .images p{
   color: #fff;
   position: absolute;
   top: 138%;
   left: 53%;
+  font-size: 19px;
+  font-weight: 400;
 }
+
+
 .product-display h5{
   text-align: center;
   margin-top: 30px;
@@ -88,12 +112,31 @@
  /* text-align: center; */
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+}
+.background{
+  background-color: whitesmoke;
+  padding: 10px;
+}
+.card-body h6{
+  font-weight: 700;
+  font-size: 18px;
+}
+.card-body a{
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+}
+.cadimg{
+  font-size: 12px;
+  font-weight: 500;
 }
 .cadimg img{
   width: 18px;
 }
 .last-section{
-   background-color: rgba(0, 0, 0, 0.719);
+   background-color: #191919;
   ;
 }
 .last-section h3{
@@ -104,7 +147,7 @@
   align-items: center;
   /* display: inline-block; */
  
-  transform: translate(35%,0);
+  transform: translate(30%,0);
 
 }
 .chat-images img{
@@ -113,23 +156,38 @@
 }
 .details{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: black;
+  /* padding: 20px; */
+  align-items: start;
+}
+.details ul{
+  padding-right: 50px;
+  padding-top: 30px;
 }
 .details ul li{
   list-style: none;
   margin: 10px;
   color: #fff;
+  margin-bottom: 20px;
 }
+
 .details ul li a{
   list-style: none;
-  margin: 10px;
+  /* margin: 15px; */
   color: #fff;
+  text-decoration: none;
+  /* opacity: 0.5; */
+  color: #b3b3b3;
+  font-weight: 100;
+  margin-left: -1px;
 }
 .details ul a{
   list-style: none;
   margin: 10px;
   color: #fff;
+  text-decoration: none;
+  font-weight: 700;
 }
 .details ul li a:hover{
   text-decoration: none;
@@ -146,17 +204,55 @@
   /* gap: 0 0px; */
   padding: 0 0px 0px 40px;
 }
+.newsletter{
+  /* margin:0 20px; */
+  padding: 0 40px;
+}
+.newsletter p{
+  font-size: 20px;
+  word-spacing: 2%;
+  line-height: 33px;
+  font-weight: 400;
+}
 .item{
   width: 100%;
   margin: 0%;
+}
+hr{
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .item img{
   width: 95%;
   height:auto;
 
 }
+#input{
+  transform: translate(50%,0);
+}
+.bell{
+  position: absolute;
+  transform: translate(950%, -87%);
+}
 
 #charge{
   position: absolute;
   padding: 20px;
+}
+.bar-bottom{
+  background-color: #191919;
+  padding: 10px;
+}
+.bar-bottom img{
+  padding-top: 10px;
+  transform: translate(440%);
+}
+.bar-bottom span{
+  color: #fff;
+  padding: 10px;
+  margin-top: 5px;
+  /* margin-bottom: 5px; */
+  display: block;
+  text-align: center;
+  font-size: 12px;
 }
