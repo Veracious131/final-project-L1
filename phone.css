@@ -1,0 +1,101 @@
+@media screen and (max-width: 478px){
+    .free-content{
+        background-color: whitesmoke;
+        margin: 30px 30px;
+        text-align: start;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-around;
+      }
+      .free{
+        margin-left: 0px;
+        text-align: start;
+      }
+      .free-content p{
+        font-size: 15px;
+        font-family: Arial;
+        font-weight: 400;
+        line-height: 0px;
+        padding-left: 10px;
+        text-align: start;
+        display: inline;
+      
+      }
+      .fred{
+        margin-left: -20px;
+        margin-right: -10px;
+        text-align: start;
+
+      
+      }
+      .fred{
+        margin-left: -20px;
+        margin-right: -10px;
+        text-align: center;
+      }
+      .background{
+        background-color: whitesmoke;
+        padding: 5px;
+        width: 5rem;
+      }
+      .back{
+        background-color: whitesmoke;
+        padding: 5px;
+        width: 10rem;
+      }
+     
+      .card-body h6{
+        font-weight: 500;
+        font-size: 16px;
+      }
+      .card-body a{
+        text-decoration: none;
+        color: black;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      .cadimg{
+        font-size: 12px;
+        font-weight: 300;
+      }
+      .cadimg img{
+        width: 10px;
+      }
+      #Gridimages{
+        display: flex;
+        /* justify-content: flex-start; */
+        /* gap: 0 0px; */
+        flex-direction: column;
+        row-gap: 10px;
+        padding: 0 0px 0px 40px;
+      }
+      .item{
+        width: 100%;
+        margin: 0%;
+      }
+      .item img{
+        width: 95%;
+        height:auto;
+      
+      }
+      .newsletter{
+        /* margin:0 20px; */
+        padding: 0 15px;
+      }
+      .newsletter p{
+        font-size: 12px;
+        word-spacing: 3%;
+        line-height: 23px;
+        font-weight: 400;
+      }
+      .two img{
+        width: 40px;
+      }
+      .chat-images{
+        align-items: center;
+        /* display: inline-block; */
+       
+        transform: translate(-12%,0);
+      
+      }
+}
