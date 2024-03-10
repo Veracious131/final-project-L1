@@ -11,12 +11,16 @@
 </head>
 
 <body>
+  <div class="container-fluid">
   <nav class="navbar zero navbar-expand p-3 justify-content-between">
-    <!-- <div class="container-fluid"> -->
     <a class="navbar-brand" href="#">
       <img src="images/logo.png" alt="oraimo-logo" class="me-3 rounded-3 ">
     </a>
-    <ul class="navbar-nav one">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav one d-sm-flex">
       <li class="nav-item d-inline"><a href="#" class="nav-link align-middle me-3">Home
         </a></li>
       <li class="nav-item"><a href="#" class="nav-link align-middle me-3 rounded-3">Daily Deals
@@ -31,6 +35,7 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle align-middle me-3 rounded-3" href="#" role="button" data-bs-toggle="dropdown"
           aria-expanded="false">
@@ -41,9 +46,11 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
+      </li>
       <li class="nav-item"><a href="#" class="nav-link align-middle me-3 rounded-3">New Arrival
         </a></li>
     </ul>
+  </div>
     <ul class="navbar-nav one">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle align-middle me-3 rounded-3" href="#" role="button" data-bs-toggle="dropdown"
@@ -55,12 +62,13 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
+      </li>
       <li class="nav-item"><a href="#" class="nav-link align-middle ms-2">
           <img src="images/icon-user.svg" alt="">
         </a></li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle align-middle ms-2" href="#" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
+          aria-expanded="false"> 
           <img src="images/icon-user.svg" alt="">
         </a>
         <ul class="dropdown-menu">
@@ -68,10 +76,12 @@
           <li><a class="dropdown-item" href="#">Another action</a></li>
           <li><a class="dropdown-item" href="#">Something else here</a></li>
         </ul>
+      </li>
     </ul>
-    <!-- </div> -->
   </nav>
+</div>
   <!-- FIRST CAROUSEL -->
+  <div class="container-fluid">
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -105,11 +115,19 @@
         <img src="images/banner-l1.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="carousel-indicators" id="carouselExampleIndicators">
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+      <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
     </div>
+    
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
@@ -119,17 +137,20 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container-fliud"></div>
+</div>
+
   <!-- below carousel ONE -->
+<div class="container-fluid">
   <div class="free-content">
-    <div class="free"><img src="images/548ba05e3ebd50c37607b010723b4658.png" alt="">
-      <p class="d-inline"> Free Shipping over ₦9000 in Lagos</p>
+    <div class="free"> <img src="images/548ba05e3ebd50c37607b010723b4658.png" alt="">
+      <p class="d-inline d-lg-none"> Free</p>
+      <p class="d-inline d-sm-none"> Free Shipping over ₦9000 in Lagos</p>
     </div>
     <div class="fred"><img src="images/21b2d03f844d825fc5dd8c827831745f.png" alt="">
-      <p class="d-inline">Cash on Delivery</p>
+      <p class="d-inline  d-sm-none">Cash on Delivery</p>
     </div>
     <div class="fred"><img src="images/674d32382b4148f5b16922b0134a9ee1.png" alt="">
-      <p class="d-inline">Hassle-Free Warranty</p>
+      <p class="d-inline d-sm-none">Hassle-Free Warranty</p>
     </div>
   </div>
   <!-- images container -->
@@ -148,17 +169,271 @@
 
     </div>
   </div>
+</div>
   <!-- product display -->
   <div class="container-fluid product-display">
-    <h5>Product Display</h5>
+    <div>
+     <h5>Product Display</h5>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex column-gap-5 ms-5 me-5">
+            <!-- first image -->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/OTW-340-680-1.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Earbud 4 ENC True Wireless Earbud</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/36-hr-long-playtime.svg" alt="">38-Hr long Time
+                  Play</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/big-digital-display.svg" alt="">oraimo Sound
+                  App</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""> <b>(53)</b></span><br>
+                <a href="#" class="cadimg">₦20500</a>
+              </div>
+            </div>
+            <!-- second image -->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/OPB-1270-680-680.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Traveler 3 Lit 27000mAh 15W Power Bank</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/dual-device-connectivity.svg" alt=""> Universal Compatibility</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/led-torch.svg" alt="">LED Torch</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(56)</b> </span><br>
+                <a href="#" class="cadimg">₦32700</a>
+              </div>
+            </div>
+            <!-- third image -->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/OHP-610S-A1-680-removebg-preview.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">BoomPop 2S ENC Over-Ear Wireless Headphones</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/gesture_5f-drag-left-right.svg" alt=""> Gesture control</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/4-mic-enc-hd-voice-in-calls.svg" alt="">ENC HD Voice in Calls</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b> (52)</b></span><br>
+                <a href="#" class="cadimg">₦38300</a>
+              </div>
+            </div>
+            <!-- fourth image-->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/opb-p5271-black.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Earbud 4 ENC True Wireless Earbud</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/2.4a-max-fast-charging (1).svg" alt=""> 2.4A Max Fast Charging</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/NumberCircleThree.svg" alt="">3 Built-in Charging Cables</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(294)</b> </span><br>
+                <a href="#" class="cadimg">₦34600</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex column-gap-5 ms-5 me-5">
+            <!-- first image -->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/OPB-P400Q(680)-10.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">PowerBox 400 4000mAh 22.5W Power Bank</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/anifas-t-™-fast-charge.svg" alt=""> PD&QC 3.0 Compatible</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/anifas-t-™-fast-charge.svg" alt=""> AniFast™ Fast Charging</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""> <b>(633)</b></span><br>
+                <a href="#" class="cadimg">₦51300</a>
+              </div>
+            </div>
+            <!-- second image -->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/opb-p5101-black.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Slice Link 10000mAh 12W Power Bank</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/5000-bend-lifespan.svg" alt="">  5000 Bend Lifespan</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/4-outputs.svg" alt=""> 4 Outputs</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(341)</b> </span><br>
+                <a href="#" class="cadimg">₦17500</a>
+              </div>
+            </div>
+            <!-- third image -->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/810.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Watch ES 2 1.95" AMOLED IP168 Smart Watch</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/bluetooth-call.svg" alt=""> Bluetooth Call</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/4-mic-enc-hd-voice-in-calls.svg" alt="">1.95'' AMOLED Display</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b> (106)</b></span><br>
+                <a href="#" class="cadimg">₦39950</a>
+              </div>
+            </div>
+            <!-- fourth image-->
+            <div class="card border-0 col">
+              <img class="card-img-top background rounded-3" src="images/opb-p5271-black.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Watch 4 Plus 2.01" HD IP68 Smart Watch</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/bluetooth-call.svg" alt="">  Bluetooth Call</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/long-battery-life.svg" alt="">7 Days Battery Life</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(96)</b> </span><br>
+                <a href="#" class="cadimg">₦38800</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex column-gap-5 ms-5 me-5">
+            <!-- first image -->
+            <div class="card border-0" style="width: 18rem;">
+              <img class="card-img-top background rounded-3" src="images/opb-p5101-black.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Slice Link 10000mAh 12W Power Bank</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/anifas-t-™-fast-charge.svg" alt=""> PD&QC 3.0 Compatible</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/NumberCircleThree.svg" alt=""> 3 Built-in Charging Cables</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""> <b>(226)</b></span><br>
+                <a href="#" class="cadimg">₦23900</a>
+              </div>
+            </div>
+            <!-- second image -->
+            <div class="card border-0"  style="width: 18rem;">
+              <img class="card-img-top background rounded-3" src="images/oeb-e30d-black.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Shark 4 Wireless Headphones</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/playtime.svg" alt=""> 20-hr Long Playtime</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/dual-device-connectivity.svg" alt="">Dual-device Connectivity</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(10)</b> </span><br>
+                <a href="#" class="cadimg">₦18800</a>
+              </div>
+            </div>
+            <!-- third image -->
+            <div class="card border-0"  style="width: 18rem;">
+              <img class="card-img-top background rounded-3" src="images/osw-30.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Watch 2R 1.39" TFT IP68 Smart Watch</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/bluetooth-call.svg" alt=""> Bluetooth Call</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/long-battery-life.svg" alt="">7 Days Battery Life</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b> (13)</b></span><br>
+                <a href="#" class="cadimg">₦50000</a>
+              </div>
+            </div>
+              <!-- foruth image -->
+            <div class="card border-0"  style="width: 18rem;">
+              <img class="card-img-top background rounded-3" src="images/osw-30.png" alt="Card image">
+              <div class="card-body">
+                <h6 class="card-title cadtitle">Watch 2R 1.39" TFT IP68 Smart Watch</h6>
+                <hr>
+                <span class="card-text cadimg"><img src="images/bluetooth-call.svg" alt=""> Bluetooth Call</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/long-battery-life.svg" alt="">7 Days Battery Life</span>
+                <hr>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
+                <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b> (13)</b></span><br>
+                <a href="#" class="cadimg">₦50000</a>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators" id="carouselExampleIndicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
   <!-- alone image -->
   <div class="container-fluid">
-    <img class="w-100" src="images/new-arrival-l.jpg" alt="">
+    <div>
+      <img class="w-100" src="images/new-arrival-l.jpg" alt="">
+    </div>
   </div>
   <!-- static cards -->
   <div class="container-fluid">
+    <div>
     <h5 class="text-center pt-5 pb-4"><b>New Arrival</b></h5>
+  </div>
     <div class="d-flex column-gap-5 ms-5 me-5">
       <!-- first image -->
       <div class="card border-0 col">
@@ -177,7 +452,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""> <b>(53)</b></span><br>
-          <a href="#" class="cadimg">#20500</a>
+          <a href="#" class="cadimg">₦20500</a>
         </div>
       </div>
       <!-- second image -->
@@ -195,7 +470,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(56)</b> </span><br>
-          <a href="#" class="cadimg">#32700</a>
+          <a href="#" class="cadimg">₦32700</a>
         </div>
       </div>
       <!-- third image -->
@@ -213,7 +488,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b> (52)</b></span><br>
-          <a href="#" class="cadimg">#38300</a>
+          <a href="#" class="cadimg">₦38300</a>
         </div>
       </div>
       <!-- fourth image-->
@@ -231,7 +506,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(294)</b> </span><br>
-          <a href="#" class="cadimg">#34600</a>
+          <a href="#" class="cadimg">₦34600</a>
         </div>
       </div>
     </div>
@@ -252,7 +527,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""> <b>(633)</b></span><br>
-          <a href="#" class="cadimg">#51300</a>
+          <a href="#" class="cadimg">₦51300</a>
         </div>
       </div>
       <!-- second image -->
@@ -270,7 +545,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(341)</b> </span><br>
-          <a href="#" class="cadimg">#17500</a>
+          <a href="#" class="cadimg">₦17500</a>
         </div>
       </div>
       <!-- third image -->
@@ -288,7 +563,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b> (106)</b></span><br>
-          <a href="#" class="cadimg">#39950</a>
+          <a href="#" class="cadimg">₦39950</a>
         </div>
       </div>
       <!-- fourth image-->
@@ -306,7 +581,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(96)</b> </span><br>
-          <a href="#" class="cadimg">#38800</a>
+          <a href="#" class="cadimg">₦38800</a>
         </div>
       </div>
     </div>
@@ -327,7 +602,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""> <b>(226)</b></span><br>
-          <a href="#" class="cadimg">#23900</a>
+          <a href="#" class="cadimg">₦23900</a>
         </div>
       </div>
       <!-- second image -->
@@ -345,7 +620,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b>(10)</b> </span><br>
-          <a href="#" class="cadimg">#18800</a>
+          <a href="#" class="cadimg">₦18800</a>
         </div>
       </div>
       <!-- third image -->
@@ -363,7 +638,7 @@
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""></span>
           <span class="card-text cadimg"><img src="images/WhatsApp Image 2024-03-06 at 1.18.39 PM.jpeg" alt=""><b> (13)</b></span><br>
-          <a href="#" class="cadimg">#50000</a>
+          <a href="#" class="cadimg">₦50000</a>
         </div>
         <div class="col"></div>
       </div>
@@ -376,7 +651,8 @@
   </div>
 
   <!-- grid system -->
-  <div class="container-fluid" id="Gridimage">
+  <div class="container-fluid" >
+    <div id="Gridimage">
     <center>
       <h5 class=" pt-4 pb-4"><b>WHY BUY FROM oraimo</b></h5>
     </center>
@@ -427,6 +703,7 @@
       </div>
     </div>
   </div>
+  </div>
   <!-- oraimo club -->
   <div class="container-fluid">
     <div class="newsletter">
@@ -437,8 +714,41 @@
       <a href="#" type="btn" class="rounded-pill border bg-black text-light text-decoration-none p-1 h5 d-inline-block mb-3 btn">follow us</a>
       <p>Are you an <b>explorer</b> at heart, always seeking new experiences? Join us at <b>oraimo</b> as we embark on exciting journeys together. Share your incredible moments with oraimo by posting your photos on Instagram using the hashtag<b> #oraimoclub</b> and tagging <b>@oraimoclub.</b> By doing so, you stand a chance to receive a special gift from us. Let's <b>Keep Exploring</b> and creating memories with <b>oraimo!</b> #oraimo #ExploreWithoraimo</p>
     </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex column-gap-5 ms-5 me-5 mb-3 mt-4">
+            <div class="inner-image"><img src="images/post-1.jpg" alt="..."></div>
+            <div class="inner-image"><img src="images/post-2.jpg" alt="..."></div>
+            <div class="inner-image"><img src="images/post-3.jpg" alt="..."></div>
+            <div class="inner-image"><img src="images/post-4.jpg" alt="..."></div>
+          </div>
+        </div>
+        <div class="carousel-item two">
+          <div class="d-flex column-gap-5 ms-5 me-5 mb-3 mt-4">
+            <div class="inner-image"><img src="images/post-5.jpg" alt="..."></div>
+            <div class="inner-image"><img src="images/post-6.jpg" alt="..."></div>
+            <div class="inner-image"><img src="images/post-7.jpg" alt="..."></div>
+            <div class="inner-image"><img src="images/post-8.jpg" alt="..."></div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-indicators " id="carouselExampleIndicators">
+        <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleAutoplayingIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     <!-- newsletter -->
-    <div class="">
+    <div class="newsletter">
       <h4 class="text-center mt-3 mb-4"> <b>NEWSLETTER</b></h4>
       <input type="text" name="" id="input" placeholder=" Enter your email address" class="form-control w-50 rounded-pill p-3">
       <img src="images/Capture.JPG" alt="bel" class="btn bell d-inline-block">
@@ -446,6 +756,7 @@
     </div>
   </div>
   <!-- last section -->
+<div class="container-fluid">
   <div class="last-section">
     <h3>follow us</h3>
     <div class="chat-images">
@@ -500,10 +811,13 @@
       <li>
     </ul>
   </div>
+</div>
   <!-- bar-bottom -->
-<div class="container-fluid bar-bottom">
+<div class="container-fluid">
+  <div class="bar-bottom">
     <img src="images/logo2.png" alt="">
     <span>© 2013-2024 oraimo Copyright.</span>
+  </div>
 </div>
 <script src="bootstrap.bundle.js"></script>
 </body>
